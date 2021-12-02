@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block head %}
+<title>Login</title>
+{% endblock %}
+
+{% block body %}
+<form action="#" method="post">
+    <!-- <input type="file" name="image" id="image"> -->
+    login: <input type="text" name="login" id="login">
+    password: <input type="password" name="password" id="password">
+    <input type="submit" value="Login">
+    new user? <a href="{{ url_for('register') }}">Register</a>
+
+</form>
+{% endblock %}
